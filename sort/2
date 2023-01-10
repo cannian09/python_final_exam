@@ -1,0 +1,22 @@
+import random
+lis=[]
+n=[]
+i=str(59276913)
+t=list(i)
+#-----------------------------------
+for i in range (8):
+    n.append(0)
+for i in range (10000):
+    invoice_number =str( "{}{:07d}".format(random.randint(1,9), random.randint(0,999999)))
+    lis.append(invoice_number)
+    y=list(lis[i])
+    p=0
+    for k in range (8):
+        if y[k]==t[k]:
+            p=p+1
+    for s in range (8):
+        if p==s:
+            n[s]=n[s]+1
+print('以111年9,10月特獎中獎號碼: 59276913 為例')
+for o in range (8):
+    print('對中',o,'碼:',n[o],'\n')
