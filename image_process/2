@@ -1,0 +1,5 @@
+from PIL import Image#使用pillow函式庫
+image=Image.open(r'C:\Users\cannian\Desktop\Python-ImageProcessing(2)\ActiveFigure-1.jpg')
+i=image.resize((image.size[0]//2,image.size[1]//2))
+image.paste(i,(0,image.size[1]-i.size[1]))
+image.save(r'C:\Users\cannian\Desktop\Python-ImageProcessing(2)\ActiveFigure-1.jpg')
