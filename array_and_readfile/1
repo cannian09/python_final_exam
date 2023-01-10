@@ -1,0 +1,7 @@
+fname = 'AboutMe-110310134.txt'
+fp = open(fname, "w")
+fp.write("班級:電機二甲\n")
+fp.write("學號:110310134\n")
+fp.write("名字:陳昕翰\n")  
+fp.write("\n")
+fp.close()
