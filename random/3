@@ -1,0 +1,8 @@
+import random as rand
+lst=[]
+for i in range(10):
+    a=rand.randint(0,50)
+    lst.append(a)
+print("before reverse:",lst)
+lst.reverse()
+print("after reverse:",lst)
