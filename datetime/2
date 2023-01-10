@@ -1,0 +1,8 @@
+import datetime as dt
+
+now = dt.datetime.now()
+A = dt.datetime(2022, 9, 7)
+
+for i in range(18):
+    then = A + dt.timedelta(weeks=1+i)
+    print(then.strftime("%Y %m %d"))
