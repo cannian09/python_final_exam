@@ -1,0 +1,8 @@
+from PIL import Image#使用pillow函式庫
+
+image=Image.open(r'C:\Users\cannian\Desktop\Python-ImageProcessing\ActiveFigure-1.jpg')
+gray=image.convert('L')
+i=Image.new('RGB',(image.width+gray.width,max(image.height,gray.height)))
+i.paste(image,(0,0))
+i.paste(gray,(image.width,0))
+i.save(r'C:\Users\cannian\Desktop\Python-ImageProcessing\ActiveFigure-1.jpg')
