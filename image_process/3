@@ -1,0 +1,6 @@
+from PIL import Image#使用pillow函式庫
+image=Image.open(r'C:\Users\cannian\Desktop\Python-ImageProcessing(3)\ActiveFigure-1.jpg')#開啟的圖片路徑
+gray=image.convert('L')
+i=gray.resize((gray.size[0]//3,gray.size[1]//3))#定義一個i為image圖片的長寬各除2
+image.paste(i,(image.size[0]-i.size[0],image.size[1]-i.size[1]))#貼上i在image的0座標(x=0),跟image的長-i的長(y)
+image.save(r'C:\Users\cannian\Desktop\Python-ImageProcessing(3)\ActiveFigure-1.jpg')#儲存圖片
