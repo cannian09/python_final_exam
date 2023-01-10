@@ -1,0 +1,5 @@
+import datetime as dt
+now = dt.datetime.now()
+D = '%d '
+m = '%m '
+print("民國",now.year-1911,"年",now.strftime(m),"月",now.strftime(D),"日" )
