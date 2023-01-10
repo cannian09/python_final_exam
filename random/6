@@ -1,0 +1,14 @@
+import random as rand
+lst=[]
+even=[]
+odd=[]
+for i in range(10):
+    a=rand.randint(0,50)
+    lst.append(a)
+    if lst[i]%2==0:
+        even.append(lst[i])
+    else:
+        odd.append(lst[i])
+print("串列:",lst)
+print("偶數:",even)
+print("奇數:",odd)
